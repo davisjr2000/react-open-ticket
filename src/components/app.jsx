@@ -12,10 +12,14 @@ class App extends Component {
     };
   }
 
+  selectTeacher = (index) => {
+    this.setState({ selectedTeacher: teachers[index]})
+  }
+
   render(){
     return(
       <div className="flex">
-        <TeacherList teachers={this.state.teachers} selectedTeacher={this.state.selectedTeacher}/>
+        <TeacherList teachers={this.state.teachers} selectTeacher={this.selectTeacher} selectedTeacher={this.state.selectedTeacher}/>
         <SelectedTeacher teacher={this.state.selectedTeacher} />
       </div>
       )

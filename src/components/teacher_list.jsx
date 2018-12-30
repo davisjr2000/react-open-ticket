@@ -11,6 +11,7 @@ const TeacherList = (props) => {
         index={index}
         specialty={teacher.specialty}
         selected={props.selectedTeacher.name === teacher.name}
+        selectTeacher={props.selectTeacher}
         />
         );
     });

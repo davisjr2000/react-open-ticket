@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import teachers from '../../data/teachers';
+import TeacherList from './teacher_list'
 
 class App extends Component {
   constructor(props) {
@@ -12,9 +13,11 @@ class App extends Component {
 
   render(){
     return(
-      <h1>HELLO REACT</h1>
+      <div>
+        <TeacherList teachers={this.state.teachers}/>
+      </div>
       )
   }
 }
 
-export default App
+export default App;

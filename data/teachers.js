@@ -28,8 +28,7 @@ const teachers = [
     name: "Martinho Hoffman",
     imageUrl: "https://kitt.lewagon.com/placeholder/users/martinhohoff",
     specialty: "Rails",
-  },
-
+  }
 ];
 
 export default teachers;

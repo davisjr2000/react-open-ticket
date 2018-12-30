@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import App from './App'
 import '../assets/stylesheets/application.scss';
 
 const Hello = ({ name }) => {
@@ -8,6 +8,7 @@ const Hello = ({ name }) => {
     <div>
       Hello,
       {name}
+      <App />
     </div>
   );
 };

@@ -1,10 +1,54 @@
 body {
   font-family: Helvetica;
+  background-color: lightgray;
 }
 
-#root {
-  height: 100vh;
+.teacher-profile{
+  background-color: white;
+  padding:10px;
+  margin:10px;
+  width:230px;
+  text-align: center;
+  border-radius: 1px;
+  box-shadow: 3px 3px 5px grey;
+}
+
+.active{
+    border: 5px solid #9DF0A5;
+    border-radius: 10%;
+  }
+
+.teacher-image{
+  height :170px;
+  border-radius: 1px;
+}
+
+.teacher-list{
+  width:50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.selected-teacher{
+  background-color: white;
+  height: 100vh;
+  width: 40%;
+  height: 100vh;
+  position: sticky !important; /* !important to override Gmaps inline CSS */
+  top: 0 !important;
+  float: right;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.selected-teacher-image{
+  border-radius: 50%;
+  border: 5px solid #9DF0A5;
+  width: 70%;
+}
+
+.flex{
+  display: flex;
 }

@@ -10,6 +10,7 @@ const TeacherList = (props) => {
         imageUrl={teacher.imageUrl}
         index={index}
         specialty={teacher.specialty}
+        selected={props.selectedTeacher.name === teacher.name}
         />
         );
     });
